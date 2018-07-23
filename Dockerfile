@@ -1,9 +1,11 @@
 FROM mhart/alpine-node:8
 
 EXPOSE 3000
-
 WORKDIR /app
-ADD . /app
+ADD package.json /app
 RUN npm install
 
+# add the rest of the files
+ADD . ./app
+  
 CMD ["node","server.js"]

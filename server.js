@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('Hello real time app not working'));
 
-process.on('SIGINT', function() {
+process.on('SIGINT', () => {
     process.exit();
 });
 
