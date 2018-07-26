@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:8
+FROM mhart/alpine-node:8.11.3
 
 EXPOSE 3000
 
